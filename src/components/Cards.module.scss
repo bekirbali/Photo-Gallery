@@ -1,0 +1,12 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+}

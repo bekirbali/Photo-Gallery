@@ -1,0 +1,39 @@
+@import "../scss/variables";
+
+.card {
+  width: 300px;
+  min-width: 150px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 0 0.3rem 0.2rem rgba($color: #7473737a, $alpha: 0.5);
+
+  border-radius: 0.4rem;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  h2 {
+    height: 3rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .img {
+    width: 200px;
+    height: 200px;
+    border-radius: 0.4rem;
+    box-shadow: 0.3rem -0.3rem 0.3rem 0.1rem rgba($color: #ff0000, $alpha: 0.6);
+    margin-top: 1rem;
+    overflow: hidden;
+
+    img {
+      transition: 0.4s ease-in-out;
+      width: 200px;
+      height: 200px;
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
+  }
+}
